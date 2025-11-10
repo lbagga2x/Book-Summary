@@ -1,7 +1,18 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  reactStrictMode: true,
+  env: {
+    NEXT_PUBLIC_API_BASE_URL: process.env.NEXT_PUBLIC_API_BASE_URL,
+    NEXT_PUBLIC_COGNITO_CLIENT_ID: process.env.NEXT_PUBLIC_COGNITO_CLIENT_ID,
+    NEXT_PUBLIC_AUTHORITY: process.env.NEXT_PUBLIC_AUTHORITY,
+    NEXT_PUBLIC_REDIRECT_URI: process.env.NEXT_PUBLIC_REDIRECT_URI,
+    NEXT_PUBLIC_LOGOUT_URI: process.env.NEXT_PUBLIC_LOGOUT_URI,
+    NEXT_PUBLIC_SCOPE: process.env.NEXT_PUBLIC_SCOPE,
+    NEXT_PUBLIC_RESPONSE_TYPE: process.env.NEXT_PUBLIC_RESPONSE_TYPE,
+    NEXT_PUBLIC_AUTH_SECRET: process.env.AUTH_SECRET,
+    NEXT_PUBLIC_NEXTAUTH_URL: process.env.NEXTAUTH_URL,
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
