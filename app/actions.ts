@@ -20,7 +20,7 @@ export async function createUploadUrl(
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${session.user?.access_token}`,
+      Authorization: `Bearer ${session.user?.id_token}`,
     },
     body: JSON.stringify({ filename }),
   });
@@ -47,7 +47,7 @@ export async function summarizeDocument(
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${session.user?.access_token}`,
+      Authorization: `Bearer ${session.user?.id_token}`,
     },
     body: JSON.stringify({ id: documentId }),
   });

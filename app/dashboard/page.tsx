@@ -64,7 +64,7 @@ export default function Home() {
 
       const response = await fetch(`${API_BASE_URL}/summaries`, {
         headers: {
-          Authorization: `Bearer ${auth.user?.access_token}`,
+          Authorization: `Bearer ${auth.user?.id_token}`,
         },
         cache: "no-store",
       });
@@ -211,7 +211,7 @@ export default function Home() {
   };
 
   // Loading state
-  if (status === "loading") {
+  if (loading) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center">
         <div className="text-center">
