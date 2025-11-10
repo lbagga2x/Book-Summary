@@ -52,7 +52,7 @@ export default function Home() {
                 className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-4 rounded-xl font-bold text-lg transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 <LogIn className="w-5 h-5" />
-                Sign In with Cognito
+                Sign In
               </button>
             </div>
           )}

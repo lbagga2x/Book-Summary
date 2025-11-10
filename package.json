@@ -9,12 +9,9 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@auth/core": "^0.41.0",
     "@aws-sdk/client-cognito-identity-provider": "^3.927.0",
     "lucide-react": "^0.553.0",
     "next": "16.0.1",
-    "next-auth": "^5.0.0-beta.30",
-    "oidc-client-ts": "^3.3.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-oidc-context": "^3.3.0"

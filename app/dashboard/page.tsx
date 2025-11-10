@@ -15,7 +15,6 @@ import {
   XCircle,
   Zap,
 } from "lucide-react";
-import { signIn } from "next-auth/react";
 import { useEffect, useState } from "react";
 import { useAuth } from "react-oidc-context";
 import { createUploadUrl, summarizeDocument } from "../actions";
@@ -233,10 +232,7 @@ export default function Home() {
           <p className="text-gray-300 mb-8">
             Sign in to upload PDFs and get AI-powered summaries
           </p>
-          <button
-            onClick={() => signIn("cognito")}
-            className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-3 rounded-xl font-bold text-lg transition-all shadow-lg"
-          >
+          <button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-3 rounded-xl font-bold text-lg transition-all shadow-lg">
             Sign In with Cognito
           </button>
         </div>
