@@ -3,7 +3,7 @@
 
 import { AuthContextProps } from "react-oidc-context";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 /**
  * Create a presigned URL for uploading a PDF
